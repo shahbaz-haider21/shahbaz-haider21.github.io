@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "ProximaNovaRegular", sans-serif;
+}
+
+.navbar {
+    padding: 0px;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top :0
+   
+    
+}
+
+.nav-menu {
+    padding-right: 50px ;
+}
+
+#drop-content li.nav-item.dropdown {
+    position: static;
+    align-self: center;
+    
+  
+}
+
+
+nav>.nav-header {
+
+    background-color: #4c203f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   
+   
+   
+}
+
+
+
+.dropdown:hover>.dropdown-menu {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* 
+.nav-menu a.dropdown.nav-item {
+    padding-top: 0;
+    padding-bottom: 0;
+} */
+
+
+.dropdown-menu {
+    height: 300px;
+    overflow: auto;
+    width: 700px;
+    left: 30%;
+    align-items: center;
+    top: 75px;
+
+}
+
+.dropdown-menu li {
+    width: 50%;
+
+}
+
+.nav-logo img {
+    width: 175px;
+    padding: 12px 0 12px;
+    margin-left: 60px;
+}
+
+.dropdown a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.dropdown-menu {
+    background-color: grey;
+}
+
+
+/* this is css for banner section*/
+
+/* .banner-container {
+    position: relative;
+    margin: 0 66px;
+}
+
+.banner-container .banner-img {
+
+    width: 100%;
+    
+   
+}
+
+
+
+.banner-container .banner-content {
+
+    position: absolute;
+    top: 33%;
+    left: 3.5%
+
+}
+
+.banner-container .banner-content h2 {
+
+    font-size: 33px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.142;
+    position: relative;
+    
+   
+}
+
+.banner-container .banner-content p {
+color: #fff;
+font-size: 24px;
+font-weight: 600;
+line-height: 1.46;
+}
+
+.banner-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0;
+    top:0;
+    opacity: 0.37;
+    
+}
+
+.banner-container .banner-content h2::before {
+    content: "";
+    width : 3px;
+    height:100% ;
+    background-color: yellow;
+    position: absolute;
+    left : -10px
+
+} */
+
+.carousel {
+margin-top: 91px;
+
+}
+.banner-wrapper {
+    position: relative;
+    padding: 0 66px;
+    width: 100%;
+
+  }
+
+  .banner-wrapper .banner-img {
+    width: 100%
+  }
+
+  .banner-content {
+    position: absolute;
+    text-shadow: -1 0 black;
+    top: 33%;
+    left: 5.5%;
+    text-align: left;
+  }
+
+/* this is css for inner-page-nav */
+
+.inner-page-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:darkslategray;
+    box-shadow: black;
+    height:70px;
+    margin:10px 66px;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.inner-page-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-shadow: black;
+    box-shadow: inset 0 0 0 0 #fff;
+    margin: 0 -3px;
+    padding: 0 3px;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+
+}
+
+.inner-page-nav a:hover {
+    
+    border-radius: 5px;
+    box-shadow: inset 150px 0 0 0 #fff;
+    color: black;
+    
+}
+
+/* this is Overview Section */
+
+
+.overview-heading {
+    margin : 50px 66px 25px 66px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #682525
+}
+
+hr {
+    margin: 0px 66px 25px 66px
+}
+
+.row.overview-container {
+    margin: 0 66px;
+    --bs-gutter-x: 0;
+}
+
+.overview-content , .overview-img {
+    width: 50%;
+    
+}
+
+
+.overview-img img {
+    width : 100%
+}
+.overview-img {
+    margin-left: 20px;
+}
+
+.overview-content {
+  padding-right: 50px;
+}
+
+
+
+/* this is Partner Section */
+
+.partner-wrapper {
+   
+    height: 66px;
+   
+    background-color: darkslategray;
+    margin: 0 66px 50px 66px;
+    
+}
+
+.partner-wrapper .col-3 , .col-9 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.partner-wrapper .col-3 h3 {
+
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    padding: 15px 25px;
+
+}
+
+.partner-content {
+    margin: 20px 66px;
+}
+
+.patner-img-wrapper {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    padding: 25px;
+    margin : 20px;
+    width: calc(25% - 40px);
+    
+}
+
+.patner-img-wrapper:hover {
+    box-shadow: 0px 0px 15px rgba(189, 74, 74, 0.5)
+}
+
+.img-box img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px){
+    .nav-logo img {
+        width: 120px;
+        margin-left: 0;
+    }
+    .banner-wrapper .banner-img {
+        height: 200px;
+    }
+
+    .banner-wrapper {
+        padding: 0;
+    }
+    .carousel {
+        margin-top: 70px;
+    }
+}
