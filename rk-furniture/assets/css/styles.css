@@ -1,0 +1,268 @@
+body, html{
+  margin: 0;
+  padding:0;
+  scroll-behavior: smooth;
+}
+.main-wrapper .nav-item  a {
+    color:  #000 !important;
+    transition: all 0.5s;  
+      margin-left: 20px;
+      font-weight: 500;
+  
+}
+ .main-wrapper .nav-item a:hover, a.nav-link.active{
+   color: #009081 !important;
+ 
+ }
+.banner-wrap {
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  left: 115px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner-text h2 {
+  font-size: 40px;
+  color: #000;
+  max-width: 40vw;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.carousel-indicators li::after {
+  cursor: pointer;
+}
+.carousel-indicators li{
+  background-color:#5fddce 
+}
+
+.carousel-indicators .active {
+  background-color: #15bba8;
+}
+
+.footer-section {
+  padding: 0 100px
+}
+
+.gallery-section {
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.gallery-section>div {
+  flex-basis: 28%;
+  margin: 2.66%;
+}
+
+.gallery-section>div img {
+  width: 100%;
+  transform: scale(0.98);
+  transition: all 0.45s ease-in-out;
+}
+
+.gallery-section>div img:hover {
+  transform: scale(1);
+}
+
+.inner-container {
+  max-width: 1500px;
+  width: 85vw;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.inner-container h3 {
+  font-size: 36px;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  display: inline;
+}
+.inner-container h3 span{
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.inner-container h3::after {
+  content: "";
+  height: 2px;
+  width: 60%;
+  background: #009081;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* .bg-grey .inner-container h3::after {
+    content: "";
+    height: 2px;
+    width: 210px;
+}
+.footer-section .inner-container h3::after {
+  content: "";
+  height: 2px;
+  width: 145px;
+} */
+
+.gallery-cat p {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.exploreBtn {
+  background-color: transparent;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none !important;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  position: relative;
+  z-index: 9;
+}
+
+.exploreBtn:hover:before {
+  width: 100%;
+}
+
+.exploreBtn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #15bba8;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.exploreBtn:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #009081;
+  z-index: -2;
+}
+
+.below-img-text-wrapper {
+  margin: 10px 0;
+}
+
+.footer-section {
+  background-color: #c8ede8;
+}
+.contact-details{
+  margin: 20px 0;
+  text-align: left;
+}
+.contact-details img{
+ 
+}
+.contact-details p,
+.contact-details a {
+  color: #1A1818;
+  text-decoration: none;
+  font-weight: 100;
+  margin-left: 10px;
+  line-height: 1.15;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+}
+.bg-grey{
+  background: #f9f9f9;
+}
+.about-sec p {
+  font-size: 18px;
+  max-width: 785px;
+  margin: 0 auto;
+}
+p.highlighted-text{
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+  margin: 30px auto;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+.banner-section{
+  margin-top: 75px
+}
+.navbar-brand img{
+  max-width: 150px;
+}
+.navbar-expand-lg {
+  padding: 0 50px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background: #fff
+}
+
+@media (max-width: 768px){
+  .navbar-brand img {
+    max-width: 110px;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+.banner-text h2 {
+  font-size: 17px;
+}
+.banner-text {
+  left: 48px;
+}
+.navbar-expand-lg {
+  padding: 0 40px;
+}
+.banner-section {
+  margin-top: 58px;
+}
+.gallery-section{
+  gap: 10px;
+}
+.gallery-section>div {
+  flex-basis: 40%;
+}
+.exploreBtn {
+  padding: 10px 15px;
+  font-size: 10px;
+}
+.inner-container h3 {
+  font-size: 20px;
+}
+.footer-section {
+  padding: 0 30px;
+}
+p.highlighted-text {
+  font-size: 16px;
+  margin: 20px auto;
+}
+.about-sec p {
+  font-size: 16px;
+}
+.inner-container {
+  padding: 40px 0;
+}
+}
