@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #04A1BF;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wrap {
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+p {
+	font-weight: 600;
+}
+.one {
+	margin-top: 10px;
+	color: #FFCD5D;
+}
+
+.two {
+	color: #51DF70;
+
+}
+
+.three {
+	color: #025F70;
+	margin-bottom: 30px;
+}
+.btn-add {
+    font-size: 20px;
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #04A1BF;
+	background-color: #025F70;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+	cursor: pointer;
+}
+.btn-add:hover{
+	background-color: #02798F;
+	color: #FFCD5D;
+}
+input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+	border: none;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.container {
+    width: 65%;
+    margin: auto;
+}
+ul {
+	text-align: left;
+	margin: 20px 50px;
+}
+
+.listItem {
+    list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+li:hover {
+	background: #76CFE0;
+}
+li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+.green {
+    background: #51DF70 !important;
+	color: #00891E;
+}
+
+@media (max-width : 420px){
+    #wrap {
+        margin: 20px 10px;
+        font-weight: bold;
+    }
+    .one {
+        font-size: 15px;
+    }
+    input {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .btn-add {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .container{
+        width: 100%;
+    }
+    .listItem {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
