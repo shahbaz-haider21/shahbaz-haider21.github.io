@@ -1,0 +1,364 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+:root {
+	--main-bg-color-odd: #0f0f0f;
+	--main-bg-color-even: #181a1c;
+	--main-text-color: #cfaf72f5;
+	--header-text-color: #ffffffc0;
+	--main-font: "Platypi", serif;
+	--cursive-font: "Cedarville Cursive", cursive;
+	--header-font: "PT Sans", sans-serif;
+	--header-font-size: 16px;
+	--para-size: 10px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #0f0f0f;
+
+}
+
+
+/* Hero Section */
+
+/*navbar and logo */
+.navbar {
+	font-family: var(--header-font) !important;
+	font-size: var(--header-font-size);
+	font-weight: 600;
+
+
+}
+
+.navbar ul li a {
+	color: var(--header-text-color) !important;
+	letter-spacing: 1px;
+	opacity: .5;
+}
+
+.navbar-brand {
+	font-family: "Londrina Outline", sans-serif;
+	font-size: 28px;
+	color: var(--main-text-color) !important;
+	letter-spacing: 1px;
+}
+
+.navbar a:hover {
+	opacity: 1;
+}
+
+
+#navbarSupportedContent ul {
+	margin-left: auto;
+}
+
+#navbarSupportedContent ul li {
+	margin-right: 20px !important;
+}
+
+.darkHeader {
+	background-color: #0f0f0f !important
+}
+
+.hero-section {
+	margin-top: -150px;
+}
+
+.hero-section .carousel-control-prev,
+.hero-section .carousel-control-next {
+	top: auto;
+	bottom: 4rem;
+	opacity: .75;
+}
+
+.hero-section .carousel-caption {
+	right: auto;
+	padding-left: 100px;
+}
+
+.hero-section .carousel-caption h5 {
+	font-family: var(--main-font);
+	font-size: 22px !important;
+	color: var(--header-text-color);
+	text-shadow: #0f0f0f;
+	letter-spacing: 2.5px;
+}
+
+.hero-section .carousel-caption p {
+	font-family: var(--cursive-font);
+	font-size: 18px !important;
+	font-weight: 500;
+	color: var(--header-text-color);
+	text-shadow: #0f0f0f;
+	letter-spacing: 1.5px;
+}
+
+.hero-section .carousel-item img {
+	filter: brightness(42%);
+	max-height: 100vh;
+	object-fit: cover;
+}
+
+.hero-section .carousel-control-next,
+.hero-section .carousel-control-prev {
+	color: #df8b09 !important;
+	opacity: .7;
+	font-size: 25px;
+	align-items: flex-end;
+	bottom: 30px;
+	width: 30px;
+}
+
+.hero-section .carousel-control-next {
+	right: 42%;
+}
+
+.hero-section .carousel-control-prev {
+	left: 42%;
+}
+
+/* ************************************************ */
+
+/* about section css */
+.about-sec {
+	padding: 80px 0;
+	background-color: var(--main-bg-color-even);
+}
+
+.about-sec h2 {
+	color: var(--main-text-color);
+	font-family: var(--main-font);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.about-sec p {
+	color: var(--header-text-color);
+	margin-top: 15px;
+}
+
+/* ***************************************************** */
+
+/* Gallery Section */
+
+.gallery-sec {
+	background-color: var(--main-bg-color-odd);
+}
+
+.slick-slide {
+	margin: 0 15px;
+	transition: all 0.5s;
+}
+
+
+.slick-custom-arrow {
+	background: transparent;
+	position: absolute;
+	bottom: -50px;
+	color: #df8b09 !important;
+	font-size: 25px;
+}
+
+.slick-custom-arrow.slick-prev {
+	left: 42%;
+}
+
+.slick-custom-arrow.slick-next {
+	right: 42%;
+}
+
+/* ************************************************** */
+
+/* Testimonial Section */
+
+
+.testimonial-sec {
+	background-color: var(--main-bg-color-even);
+}
+
+.inner-sec {
+	padding: 80px 0 50px;
+}
+
+.inner-sec .carousel,
+#galleryCarousel {
+	margin-bottom: 30px;
+}
+
+.section-title {
+	font-size: 28px;
+	text-transform: uppercase;
+	color: var(--main-text-color);
+	font-family: "Londrina Outline", sans-serif;
+	letter-spacing: 2.5px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 0 30px;
+}
+
+.testimonial-sec .carousel-control-next,
+.testimonial-sec .carousel-control-prev {
+	color: #df8b09 !important;
+	font-size: 25px;
+	align-items: flex-end;
+	bottom: -40px;
+	width: 30px;
+}
+
+.testimonial-sec .carousel-control-next {
+	right: 42%;
+}
+
+.testimonial-sec .carousel-control-prev {
+	left: 42%;
+}
+
+.testimonial-sec .carousel-indicators {
+	display: none;
+}
+
+.testimonial-img {
+	transition: all 0.5s;
+}
+
+.testimonial-img:hover {
+	transform: scale(1.05);
+}
+
+.testimonial-content {
+
+	font-family: "Cedarville Cursive", cursive;
+	font-size: 20px;
+	color: var(--header-text-color);
+}
+
+
+/* *************************************************** */
+
+
+/*portfolio Section CSS*/
+
+
+.portfolio-sec {
+	background-color: var(--main-bg-color-odd);
+}
+
+.portfolio-sec .section-title {
+	padding-bottom: 10px;
+}
+
+.portfolio-img-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	flex-wrap: wrap;
+	max-height: 1245px;
+}
+
+.img-item {
+	width: 49%;
+	transition: all 0.5s;
+}
+
+.img-item:hover,
+.slick-slide:hover {
+	transform: scale(1.05);
+}
+
+
+/* **************************************************** */
+
+
+/* Footer Section */
+
+
+.footer-sec {
+	color: var(--header-text-color);
+	font-size: 12px;
+	padding: 20px 0;
+	background-color: var(--main-bg-color-even);
+
+}
+
+.back-to-top {
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+/* ***************************************** */
+
+/* Media Query */
+
+@media (max-width: 992px) {
+	.hero-section {
+		margin: 0;
+	}
+
+	.navbar-toggler {
+		border-color: #fff;
+	}
+
+	.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+
+	.hero-section .carousel-control-prev,
+	.testimonial-sec .carousel-control-prev,
+	.slick-custom-arrow.slick-prev {
+		left: 10%;
+	}
+
+	.hero-section .carousel-control-next,
+	.testimonial-sec .carousel-control-next,
+	.slick-custom-arrow.slick-next {
+		right: 10%;
+	}
+
+	.hero-section .carousel-caption {
+		transform: translateY(-50%);
+	}
+
+	.testimonial-img,
+	.testimonial-content {
+		width: 85%;
+		margin: 0 auto;
+		font-size: 16px;
+	}
+
+	.portfolio-sec .img-item {
+		margin: 0 auto;
+		width: 80% !important;
+	}
+
+	.portfolio-img-wrapper {
+		max-height: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.hero-section .carousel-caption {
+		width: 100% !important;
+		left: -75px !important;
+		top: 34% !important;
+	}
+
+	.hero-section .carousel-caption p {
+		font-size: 14px !important;
+
+	}
+
+	.about-sec h2,
+	.about-sec p {
+		width: 85% !important;
+	}
+}
